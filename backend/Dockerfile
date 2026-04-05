@@ -15,4 +15,4 @@ ENV NAKAMA_DB_ADDRESS=postgres:localdb@postgres:5432/nakama
 
 ENTRYPOINT ["/bin/sh", "-ecx", \
   "/nakama/nakama migrate up --database.address $NAKAMA_DB_ADDRESS && \
-   exec /nakama/nakama --name nakama1 --database.address $NAKAMA_DB_ADDRESS --logger.level INFO --session.token_expiry_sec 7200 --runtime.js_entrypoint index.js --socket.server_port ${PORT:-7350}"]
+   exec /nakama/nakama --name nakama1 --database.address $NAKAMA_DB_ADDRESS --logger.level INFO --session.token_expiry_sec 7200 --runtime.js_entrypoint index.js --socket.port ${PORT:-7350}"]
