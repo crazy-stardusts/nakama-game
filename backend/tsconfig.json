@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./modules",
+    "rootDir": ".",
+    "types": [],
+    "skipLibCheck": true,
+    "declaration": false,
+    "stripInternal": true
+  },
+  "include": ["src/**/*.ts", "node_modules/nakama-runtime/index.d.ts"],
+  "exclude": []
+}
