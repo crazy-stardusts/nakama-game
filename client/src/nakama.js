@@ -3,7 +3,7 @@ import { Client } from "@heroiclabs/nakama-js";
 const NAKAMA_SERVER = process.env.REACT_APP_NAKAMA_HOST || "127.0.0.1";
 const NAKAMA_PORT = process.env.REACT_APP_NAKAMA_PORT || "7350";
 const NAKAMA_KEY = "defaultkey";
-const USE_SSL = false;
+const USE_SSL = process.env.REACT_APP_NAKAMA_USE_SSL === "true";
 
 let client = null;
 let session = null;
